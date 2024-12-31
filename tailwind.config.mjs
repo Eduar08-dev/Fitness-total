@@ -10,6 +10,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        "rojo-suave": "#e12121",
+        "rojo-oscuro": "#821a1a",
       },
     },
   },
