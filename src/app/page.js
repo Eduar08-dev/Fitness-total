@@ -76,7 +76,7 @@ export default function Home() {
   <>
     <PrimeraSeccion />
 
-    <AnimatedSection className="container flex flex-col justify-center w-full mx-auto py-6 sm:py-8 md:py-10 px-4 sm:px-6 lg:px-8">
+    <AnimatedSection className="container shadow-lg flex flex-col justify-center w-full mx-auto py-6 sm:py-8 md:py-10 px-4 sm:px-6 lg:px-8">
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-center py-3 sm:py-5 text-white ">Nuestros Entrenadores</h1>
       <div className="flex flex-col lg:flex-row justify-center gap-4 sm:gap-6 text-black">
         {entrenadores.map((entrenador, index) => (

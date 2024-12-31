@@ -3,10 +3,10 @@ import Image from 'next/image';
 
 const CardEntrenadores = ({ entrenador }) => {
   return (
-    <div className="group relative overflow-hidden rounded-xl bg-gradient-to-b from-red-900/20 to-red-950/40 p-1 h-96">
-      <div className="relative w-full h-full text-center transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+    <div className="group relative overflow-hidden rounded-xl shadow-lg bg-gradient-to-b from-yellow-600 to-yellow-800 p-1 h-96">
+      <div className="relative w-full h-full text-center cursor-pointer transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         {/* Front of the card */}
-        <div className="absolute inset-0 [backface-visibility:hidden]">
+        <div className="absolute inset-0 [backface-visibility:hidden] ">
           {entrenador.foto && (
             <Image 
               src={entrenador.foto} 
