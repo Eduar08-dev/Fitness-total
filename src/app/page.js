@@ -5,6 +5,7 @@ import Image from "next/image";
 import PrimeraSeccion from "../components/PrimeraSeccion/page";
 import CardEntrenadores from "@/components/CardEntrenadores/page";
 import GymHistorySection from "@/components/GymHistorySection/page";
+import { useRouter } from 'next/router';
 
 export default function Home() {
   const useIntersectionObserver = (options = {}) => {
@@ -49,28 +50,33 @@ export default function Home() {
       </div>
     );
   };
-  const entrenadores = [
-    {
-      nombre: "Juan Pérez",
-      informacion: "Especialista en entrenamiento de fuerza con 10 años de experiencia.",
-      foto: "/foto1.jpeg"
-    },
-    {
-      nombre: "María García",
-      informacion: "Experta en yoga y pilates, certificada internacionalmente.",
-      foto: "/foto1.jpeg"
-    },
-    {
-      nombre: "Carlos Rodríguez",
-      informacion: "Entrenador de CrossFit y nutricionista deportivo.",
-      foto: "/foto1.jpeg"
-    },
-    {
-      nombre: "Ana Martínez",
-      informacion: "Especialista en rehabilitación física y entrenamiento funcional.",
-      foto: "/foto1.jpeg"
-    }
-  ];
+
+    const entrenadores = [
+      {
+        id: 1,
+        nombre: "John Cabarcas",
+        informacion: "Especialista en entrenamiento de fuerza con 10 años de experiencia.",
+        foto: "/foto1.jpeg",
+      },
+      {
+        id: 2,
+        nombre: "Dylan Blanco",
+        informacion: "Experta en yoga y pilates, certificada internacionalmente.",
+        foto: "/foto1.jpeg",
+      },
+      {
+        id: 3,
+        nombre: "Carlos Rodríguez",
+        informacion: "Entrenador de CrossFit y nutricionista deportivo.",
+        foto: "/foto1.jpeg",
+      },
+      {
+        id: 4,
+        nombre: "Ana Martínez",
+        informacion: "Especialista en rehabilitación física y entrenamiento funcional.",
+        foto: "/foto1.jpeg",
+      }
+    ];
 
   return (
   <>
@@ -81,7 +87,8 @@ export default function Home() {
       <div className="flex flex-col lg:flex-row justify-center gap-4 sm:gap-6 text-black">
         {entrenadores.map((entrenador, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2">
-            <CardEntrenadores entrenador={entrenador} />
+            <CardEntrenadores key={entrenador.id} {...entrenador}
+ />
           </div>
         ))}
       </div>
