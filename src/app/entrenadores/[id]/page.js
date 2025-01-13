@@ -162,13 +162,13 @@ return (
                 </p>
             </Link>
             <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
-                <h1 className="text-5xl md:text-7xl font-bold text-yellow-500 mb-4">
+                <h1 className="animate__animated animate__slideInLeft text-5xl md:text-7xl font-bold text-yellow-500 mb-4">
                     {entrenador.nombre}
                 </h1>
             </div>
         </div>
         <main className="max-w-6xl mx-auto space-y-12 p-4 md:p-8 -mt-12">
-            <section className="bg-zinc-800/50 backdrop-blur-sm p-8 rounded-lg shadow-xl">
+            <section className="bg-zinc-800/50 animate__animated animate__slideInRight backdrop-blur-sm p-8 rounded-lg shadow-xl">
                 <div className="flex flex-col md:flex-row gap-8">
                     <div className="w-full md:w-1/3">
                         <img
@@ -204,20 +204,20 @@ return (
                 </div>
             </section>
             <div className="grid md:grid-cols-2 gap-8">
-                <section className="bg-zinc-800 p-8 rounded-lg">
+                <section className="bg-zinc-800 p-8 rounded-lg animate__animated animate__slideInLeft">
                     <h2 className="text-3xl font-bold text-yellow-500 mb-4">
                         Especialidad
                     </h2>
                     <ul className="text-xl text-gray-300 list-disc list-inside">
-                                            {entrenador.especialidad.split(",").map((especialidad, index) => (
-                                                    <li key={index} className="flex items-center gap-2">
-                                                            <CheckCircle className="w-5 h-5 text-yellow-500" />
-                                                            <span>{especialidad.trim()}</span>
-                                                    </li>
-                                            ))}
-                                    </ul>
+                        {entrenador.especialidad.split(",").map((especialidad, index) => (
+                            <li key={index} className="flex items-center gap-2">
+                                <CheckCircle className="w-5 h-5 text-yellow-500" />
+                                <span>{especialidad.trim()}</span>
+                            </li>
+                        ))}
+                    </ul>
                 </section>
-                <section className="bg-zinc-800 p-8 rounded-lg">
+                <section className="bg-zinc-800 p-8 rounded-lg animate__animated animate__slideInRight">
                     <h2 className="text-3xl font-bold text-yellow-500 mb-6">
                         Metodologías
                     </h2>

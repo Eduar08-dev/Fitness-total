@@ -67,7 +67,7 @@ export default function Nosotros() {
             className="w-full h-full object-cover opacity-50"
           />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
+        <div className="animate__animated animate__slideInLeft absolute bottom-0 left-0 right-0 p-8 md:p-16">
           <h1 className="text-5xl md:text-7xl font-bold text-yellow-500 mb-4">
             Nosotros
           </h1>
@@ -79,7 +79,7 @@ export default function Nosotros() {
       </div>
       <main className="max-w-6xl mx-auto space-y-12 p-4 md:p-8 -mt-12">
         {/* Historia Section */}
-        <section className="bg-zinc-800/50 backdrop-blur-sm p-8 rounded-lg shadow-xl">
+        <section className="bg-zinc-800/50 backdrop-blur-sm p-8 rounded-lg shadow-xl animate__animated animate__slideInRight">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-1/2 space-y-6">
               <h2 className="text-3xl font-bold text-yellow-500">

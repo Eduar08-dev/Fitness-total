@@ -43,19 +43,14 @@ export default function Contact() {
             className="w-full h-full object-cover opacity-40"
           />
         </div>
-        <div className="absolute top-4 right-4">
-          <button className="px-4 py-2 bg-yellow-600 rounded-md hover:bg-yellow-700 transition-colors">
-            Volver a la página principal
-          </button>
-        </div>
         <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
-          <h1 className="text-4xl md:text-6xl font-bold text-yellow-500 mb-4 flex items-center gap-4">
+          <h1 className="animate__animated animate__slideInRight text-4xl md:text-6xl font-bold text-yellow-500 mb-4 flex items-center gap-4">
             <MessageCircle className="w-12 h-12" /> Contáctanos
           </h1>
         </div>
       </div>
       <main className="max-w-6xl mx-auto space-y-12 p-4 md:p-8 -mt-12">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="animate__animated animate__slideInRight grid md:grid-cols-2 gap-8">
           {/* Formulario de Contacto */}
           <section className="bg-zinc-800/50 backdrop-blur-sm p-8 rounded-lg shadow-xl">
             <h2 className="text-2xl font-bold text-yellow-500 mb-6">

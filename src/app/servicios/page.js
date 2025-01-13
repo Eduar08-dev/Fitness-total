@@ -1,4 +1,5 @@
 import React from "react";
+import "animate.css/animate.min.css";
 import {
   Dumbbell,
   Heart,
@@ -91,7 +92,7 @@ export default function Services() {
             className="w-full h-full object-cover blur-sm"
           />
         </div>
-        <div className="relative max-w-6xl mx-auto px-4 py-20 md:py-32">
+        <div className="animate__animated animate__slideInLeft relative max-w-6xl mx-auto px-4 py-20 md:py-32">
           <h1 className="text-5xl md:text-7xl font-bold">
             Transforma tu vida con nuestros{" "}
             <span className="text-yellow-500">servicios</span>

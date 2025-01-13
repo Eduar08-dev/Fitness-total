@@ -9,6 +9,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 import Image from "next/image";
+import 'animate.css';
 
 export default function Horarios() {
   const horarios = {
@@ -81,12 +82,7 @@ export default function Horarios() {
             className="w-full h-full object-cover opacity-40"
           />
         </div>
-        <div className="absolute top-4 right-4">
-          <button className="px-4 py-2 bg-yellow-600 rounded-md hover:bg-yellow-700 transition-colors">
-            Volver a la página principal
-          </button>
-        </div>
-        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-16">
+        <div className="animate__animated animate__slideInLeft absolute bottom-0 left-0 right-0 p-8 md:p-16">
           <h1 className="text-4xl md:text-6xl font-bold text-yellow-500 mb-4 flex items-center gap-4">
             <Clock className="w-12 h-12" /> Horarios
           </h1>
@@ -94,7 +90,7 @@ export default function Horarios() {
       </div>
       <main className="max-w-6xl mx-auto space-y-12 p-4 md:p-8 -mt-12">
         {/* Horarios Principales */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="animate__animated animate__slideInRight grid md:grid-cols-3 gap-6">
           {Object.entries(horarios).map(([dia, slots]) => (
             <section key={dia} className="bg-zinc-800 rounded-lg p-6">
               <h2 className="text-2xl font-bold text-yellow-500 mb-4 flex items-center gap-2">
@@ -116,7 +112,7 @@ export default function Horarios() {
           ))}
         </div>
         {/* Clases Especiales */}
-        <section className="bg-zinc-800 p-8 rounded-lg">
+        <section className="bg-zinc-800 animate__animated animate__slideInRight animate__delay-1s p-8 rounded-lg">
           <h2 className="text-3xl font-bold text-yellow-500 mb-6 flex items-center gap-2">
             <Info className="w-8 h-8" />
             Clases Especiales

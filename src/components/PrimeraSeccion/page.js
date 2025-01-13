@@ -13,7 +13,7 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-neutral-900/50" />
       <div className="relative container mx-auto px-4 h-full flex flex-col justify-center">
-        <div className="max-w-3xl space-y-6">
+        <div className="animate__animated animate__slideInLeft max-w-3xl space-y-6">
           <span className="text-yellow-400 font-semibold text-lg">¿LISTO PARA EL CAMBIO?</span>
           <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
             Descubre los servicios que tenemos para ti
