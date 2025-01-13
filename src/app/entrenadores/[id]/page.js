@@ -184,16 +184,16 @@ return (
                         <div className="flex gap-4">
                             {certificadosYClientes[entrenador.id]?.map((certificado, index) => (
                                     <div key={index} className="bg-zinc-800/50 p-4 rounded
-                                    lg:rounded-lg shadow-md">
+                                    lg:rounded-lg ">
                                             {certificado.titulo && (
                                                 <h2 className="text-md text-yellow-500 flex items-center gap-2">
-                                                    <Medal className="w-4 h-4" />
+                                                    <Medal className="w-10 h-20 md:w-6 md:h-6" />
                                                     {certificado.titulo}
                                                 </h2>
                                             )}
                                             {certificado.cliente && (
                                                 <h2 className="text-md text-yellow-500 flex items-center gap-2">
-                                                    <CheckCircle className="w-4 h-4" />
+                                                    <CheckCircle className="w-10 h-20 md:w-6 md:h-6" />
                                                     {certificado.cliente}
                                                 </h2>
                                             )}
@@ -211,7 +211,7 @@ return (
                     <ul className="text-xl text-gray-300 list-disc list-inside">
                         {entrenador.especialidad.split(",").map((especialidad, index) => (
                             <li key={index} className="flex items-center gap-2">
-                                <CheckCircle className="w-5 h-5 text-yellow-500" />
+                                <CheckCircle className="w-5 h-5 text-yellow-500 md:w-6 md:h-6" />
                                 <span>{especialidad.trim()}</span>
                             </li>
                         ))}
@@ -272,14 +272,14 @@ return (
                         href="tel:+1234567890"
                         className="flex items-center gap-4 hover:text-yellow-500 transition-colors"
                     >
-                        <Phone className="w-6 h-6" />
+                        <Phone className="w-6 h-6 md:w-8 md:h-8" />
                         <span>+1 (234) 567-890</span>
                     </a>
                     <a
                         href="mailto:john@example.com"
                         className="flex items-center gap-4 hover:text-yellow-500 transition-colors"
                     >
-                        <Mail className="w-6 h-6" />
+                        <Mail className="w-6 h-6 md:w-8 md:h-8" />
                         <span>john@example.com</span>
                     </a>
                     <a
@@ -288,7 +288,7 @@ return (
                         rel="noopener noreferrer"
                         className="flex items-center gap-4 hover:text-yellow-500 transition-colors"
                     >
-                        <Instagram className="w-6 h-6" />
+                        <Instagram className="w-6 h-6 md:w-8 md:h-8" />
                         <span>@johncabarcas</span>
                     </a>
                 </div>

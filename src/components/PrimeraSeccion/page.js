@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -21,9 +22,11 @@ export default function Hero() {
           <p className="text-lg text-gray-300">
             Embárcate en un viaje de transformación, superación y bienestar conociendo nuestros servicios.
           </p>
-          <button className="bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-            ¡Descubre más!
-          </button>
+          <Link className= "flex" href="/servicios">
+            <span className="bg-gradient-to-r from-yellow-600 to-yellow-700 hover:from-yellow-700 hover:to-yellow-800 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+              ¡Descubre más!
+            </span>
+          </Link>
         </div>
       </div>
     </section>
