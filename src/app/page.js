@@ -61,18 +61,18 @@ export default function Home() {
       {
         id: 2,
         nombre: "Dylan Blanco",
-        informacion: "Experta en yoga y pilates, certificada internacionalmente.",
+        informacion: "Entrenador de planta con mas de 2 años de experiencia en el área de entrenamiento funcional.",
         foto: "/foto1.jpeg",
       },
       {
         id: 3,
-        nombre: "Carlos Rodríguez",
-        informacion: "Entrenador de CrossFit y nutricionista deportivo.",
+        nombre: "Juan Gallardo",
+        informacion: "Psicólogo deportivo y entrenador personal con 5 años de experiencia.",
         foto: "/foto1.jpeg",
       },
       {
         id: 4,
-        nombre: "Ana Martínez",
+        nombre: "Valentina Gallardo",
         informacion: "Especialista en rehabilitación física y entrenamiento funcional.",
         foto: "/foto1.jpeg",
       }
@@ -84,6 +84,9 @@ export default function Home() {
 
     <AnimatedSection className="container shadow-lg flex flex-col justify-center w-full mx-auto py-6 sm:py-8 md:py-10 px-4 sm:px-6 lg:px-8">
       <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-center py-3 sm:py-5 text-white ">Nuestros Entrenadores</h1>
+      <p className="text-xl text-gray-300 flex justify-center mb-6">
+        ¡Conoce a nuestros entrenadores y descubre cómo pueden ayudarte a alcanzar tus metas en el mundo del fitness y contribuir a una buena salud!
+                </p>
       <div className="flex flex-col lg:flex-row justify-center gap-4 sm:gap-6 text-black">
         {entrenadores.map((entrenador, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2">

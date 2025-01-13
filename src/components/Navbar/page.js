@@ -24,7 +24,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-4">
           <Link href="/" className="flex items-center space-x-2 text-xl font-bold text-yellow-400">
             <Image 
-              src="/foto1.jpeg"
+              src="/logo-gym.png"
               alt="Fitness Total Gym Logo"
               width={80}
               height={60}
@@ -56,11 +56,6 @@ export default function Navbar() {
                 <div className="py-2 px-4 hover:bg-yellow-600 rounded-t-lg">
                   <Link href="/servicios" className="block text-white" onClick={() => setIsDropdownOpen(false)}>
                     Servicios
-                  </Link>
-                </div>
-                <div className="py-2 px-4 hover:bg-yellow-600">
-                  <Link href="/programas" className="block text-white" onClick={() => setIsDropdownOpen(false)}>
-                    Programas
                   </Link>
                 </div>
                 <div className="py-2 px-4 hover:bg-yellow-600 rounded-b-lg">
@@ -104,9 +99,6 @@ export default function Navbar() {
               <div className="flex flex-col space-y-2 pl-4">
                 <Link href="/servicios" className="text-white hover:text-yellow-400 transition-colors" onClick={() => { setIsDropdownOpen(false); setIsMenuOpen(false); }}>
                   Servicios
-                </Link>
-                <Link href="/programas" className="text-white hover:text-yellow-400 transition-colors" onClick={() => { setIsDropdownOpen(false); setIsMenuOpen(false); }}>
-                  Programas
                 </Link>
                 <Link href="/horarios" className="text-white hover:text-yellow-400 transition-colors" onClick={() => { setIsDropdownOpen(false); setIsMenuOpen(false); }}>
                   Horarios
