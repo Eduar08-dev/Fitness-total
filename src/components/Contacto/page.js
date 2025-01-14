@@ -11,6 +11,7 @@ import {
   MessageCircle,
   HelpCircle,
 } from "lucide-react";
+import "animate.css/animate.min.css";
 
 export default function Contact() {
 

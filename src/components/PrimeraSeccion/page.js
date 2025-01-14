@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import "animate.css/animate.min.css";
 
 export default function Hero() {
   return (

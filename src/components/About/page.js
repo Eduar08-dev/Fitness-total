@@ -9,7 +9,9 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
+import "animate.css/animate.min.css";
 export default function Nosotros() {
+  
   const valores = [
     {
       icon: <Heart className="w-8 h-8 text-yellow-500" />,

@@ -183,21 +183,21 @@ return (
                         </p>
                         <div className="flex gap-4">
                             {certificadosYClientes[entrenador.id]?.map((certificado, index) => (
-                                    <div key={index} className="bg-zinc-800/50 p-4 rounded
+                                <div key={index} className="bg-zinc-800/50 p-4 rounded
                                     lg:rounded-lg ">
                                             {certificado.titulo && (
-                                                <h2 className="text-md text-yellow-500 flex items-center gap-2">
-                                                    <Medal className="w-10 h-20 md:w-6 md:h-6" />
-                                                    {certificado.titulo}
-                                                </h2>
+                                        <h2 className="text-md text-yellow-500 flex items-center gap-2">
+                                                <Medal className="w-10 h-20 md:w-6 md:h-6" />
+                                                {certificado.titulo}
+                                        </h2>
                                             )}
                                             {certificado.cliente && (
-                                                <h2 className="text-md text-yellow-500 flex items-center gap-2">
-                                                    <CheckCircle className="w-10 h-20 md:w-6 md:h-6" />
-                                                    {certificado.cliente}
-                                                </h2>
-                                            )}
-                                    </div>
+                                        <h2 className="text-md text-yellow-500 flex items-center gap-2">
+                                            <CheckCircle className="w-10 h-20 md:w-6 md:h-6" />
+                                            {certificado.cliente}
+                                        </h2>
+                                     )}
+                                </div>
                             ))}
                         </div>
                     </div>
