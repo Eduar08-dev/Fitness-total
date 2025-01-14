@@ -156,7 +156,7 @@ export default function Navbar() {
             )}
             <div>
               <Link href="/contacto" className="text-white hover:text-yellow-400 transition-colors" onClick={handleLinkClick}>
-                Contáctanos
+                Contáctano
               </Link>
             </div>
           </div>
