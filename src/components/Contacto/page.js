@@ -1,16 +1,7 @@
-import React from "react";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
-  Instagram,
-  Facebook,
-  Twitter,
-  Send,
-  MessageCircle,
-  HelpCircle,
-} from "lucide-react";
+"use client";
+
+import React, { useState } from "react";
+import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Twitter, Send, MessageCircle, HelpCircle } from 'lucide-react';
 import "animate.css/animate.min.css";
 
 export default function Contact() {
@@ -32,6 +23,28 @@ export default function Contact() {
         "Te recomendamos traer ropa cómoda, una toalla y agua. Todo el equipo necesario lo proporcionamos nosotros.",
     },
   ];
+
+  const [formData, setFormData] = useState({
+    nombre: "",
+    email: "",
+    asunto: "",
+    mensaje: ""
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    const mensaje = `Nombre: ${formData.nombre}%0AEmail: ${formData.email}%0AAsunto: ${formData.asunto}%0A%0AMensaje:%0A${formData.mensaje}`;
+    const telefono = "+573002544260"; // Reemplaza con tu número de WhatsApp
+    const whatsappUrl = `https://wa.me/${telefono}?text=${mensaje}`;
+    
+    window.open(whatsappUrl, '_blank');
+  };
 
   return (
     <div className="w-full min-h-screen bg-zinc-900 text-white">
@@ -57,11 +70,14 @@ export default function Contact() {
             <h2 className="text-2xl font-bold text-yellow-500 mb-6">
               Envíanos un mensaje
             </h2>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="space-y-2">
                 <label className="block text-gray-300">Nombre completo</label>
                 <input
                   type="text"
+                  name="nombre"
+                  value={formData.nombre}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 rounded-lg bg-zinc-700 border border-zinc-600 focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500"
                   placeholder="Tu nombre"
                 />
@@ -72,6 +88,9 @@ export default function Contact() {
                 </label>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 rounded-lg bg-zinc-700 border border-zinc-600 focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500"
                   placeholder="tucorreo@ejemplo.com"
                 />
@@ -80,6 +99,9 @@ export default function Contact() {
                 <label className="block text-gray-300">Asunto</label>
                 <input
                   type="text"
+                  name="asunto"
+                  value={formData.asunto}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 rounded-lg bg-zinc-700 border border-zinc-600 focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500"
                   placeholder="¿Sobre qué nos quieres contactar?"
                 />
@@ -87,6 +109,9 @@ export default function Contact() {
               <div className="space-y-2">
                 <label className="block text-gray-300">Mensaje</label>
                 <textarea
+                  name="mensaje"
+                  value={formData.mensaje}
+                  onChange={handleChange}
                   className="w-full px-4 py-2 rounded-lg bg-zinc-700 border border-zinc-600 focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 h-32"
                   placeholder="Escribe tu mensaje aquí..."
                 />
@@ -98,7 +123,6 @@ export default function Contact() {
                 <Send className="w-5 h-5" />
                 Enviar mensaje
               </button>
-              
             </form>
           </section>
           {/* Información de Contacto */}
@@ -215,3 +239,4 @@ export default function Contact() {
     </div>
   );
 }
+
