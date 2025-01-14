@@ -88,6 +88,9 @@ export default function Navbar() {
           <Link href="/nosotros" className="text-white hover:text-yellow-400 transition-colors">
             Nosotros
           </Link>
+          <Link href="/asistente-virtual" className="text-white hover:text-yellow-400 transition-colors" onClick={handleLinkClick}>
+                Asistente Virtual
+          </Link>
           <div className="relative" ref={dropdownRef}>
             <button 
               onClick={toggleDropdown}

@@ -31,3 +31,4 @@ Fitness Total Gym ofrece una variedad de servicios y clases:
 Para más información o para agendar una visita, por favor contáctanos al +57 300 123 4567 o visita nuestras instalaciones en Calle Principal #123, Ciudad.
 `;
 
+
