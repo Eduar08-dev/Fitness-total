@@ -17,6 +17,23 @@ export default {
   				DEFAULT: 'hsl(var(--card))',
   				foreground: 'hsl(var(--card-foreground))'
   			},
+			  animation: {
+				glow: "glow 2s infinite",
+				"pulse-glow": "pulseGlow 3s infinite ease-in-out",
+			  },
+			  keyframes: {
+				glow: {
+					"0%, 100%": { textShadow: "0 0 10px #ff4500, 0 0 20px #ffa500, 0 0 40px #ff4500" },
+					"50%": { textShadow: "0 0 20px #ffa500, 0 0 40px #ff4500, 0 0 60px #ff8c00" },
+				  },
+				pulseGlow: {
+					"0%, 100%": { opacity: 0.7, transform: "scale(1)" },
+					"50%": { opacity: 1, transform: "scale(1.2)" },
+				  },
+	        }, 
+			boxShadow: {
+				glow: "0 0 10px #ff8c00, 0 0 20px #ff4500, 0 0 30px #ff1493",
+			},
   			popover: {
   				DEFAULT: 'hsl(var(--popover))',
   				foreground: 'hsl(var(--popover-foreground))'
