@@ -56,6 +56,7 @@ export default function Nosotros() {
       descripcion: "Zona especializada para entrenamiento funcional y CrossFit",
     },
   ];
+  
   return (
     <div className="w-full min-h-screen bg-zinc-900 text-white">
       {/* Hero Section */}

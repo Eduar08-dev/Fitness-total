@@ -22,7 +22,7 @@ export default function Navbar() {
     <nav className="relative top-0 z-50 w-full bg-gradient-to-b from-neutral-800 to-neutral-900 shadow-lg backdrop-blur-sm bg-opacity-90">
       <div className="container mx-auto flex items-center justify-between px-4 py-4">
         <div className="flex items-center space-x-4">
-          <Link href="/" className="flex items-center space-x-2 text-xl font-bold text-yellow-400">
+          <Link href="/" className="flex items-center space-x-2 text-xl font-bold text-white">
             <Image 
               src="/logo-gym.png"
               alt="Fitness Total Gym Logo"
@@ -30,7 +30,7 @@ export default function Navbar() {
               height={60}
               className="rounded-lg border-1 border-yellow-400"
             />
-            <span className="text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-yellow-400">
+            <span className="text-2xl font-extrabold tracking-tight text-transparent bg-clip-text bg-white">
               Fitness Total Gym
             </span>
           </Link>
