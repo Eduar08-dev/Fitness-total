@@ -44,7 +44,8 @@ const GeminiChat = () => {
 
     **Pregunta del usuario:**
     ${input}
-    Tambien puedes crear rutinas básicas para los requerimientos del usuario, claramente, recomendandole al final el seguimiento de un profesional en el área. No te limites a responder solo lo que se te pregunta, puedes ser proactivo y ofrecer información adicional que pueda ser de interés para el usuario. En caso de que el usuario te demuestre un nivel de conocimiento avanzado en la solicitud, puedes responder con mayor profundidad y detalle; y ajustar la rutina a una más intensa debido a su nivel.
+  
+    Si el ${input} del usuario solicita una rutina, proporciona una rutina de entrenamiento personalizada basada en su nivel de experiencia y objetivos.
     `;
 
     try {
