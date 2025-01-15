@@ -27,7 +27,7 @@ const roboto = Roboto({
 
 export const metadata = {
   title: "Fitness total gym",
-  description: "stay fit and healthy",
+  description: "Logra tus objetivos con nosotros y se parte de nuestra comunidad",
 };
 
 export default function RootLayout({ children }) {
