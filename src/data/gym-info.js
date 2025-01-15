@@ -2,10 +2,10 @@ export const gymInfo = `
 Fitness Total Gym ofrece una variedad de servicios y clases:
 
 1. Entrenamiento personal:
-   - John Cabarcas: Especialista en musculación, disponible de lunes a viernes de 6am a 8pm.
-   - Dylan Blanco: Experto en entrenamiento funcional, disponible de lunes a sábado de 7am a 9pm.
-   - Juan Gallardo: Especialista en entrenamiento deportivo y psicología deportiva, disponible de martes a domingo de 8am a 7pm.
-   - Valentina Gallardo: Experta en rehabilitación física y entrenamiento funcional, disponible de lunes a viernes de 9am a 6pm.
+   - John Cabarcas: Profesional en educación física y deportes, disponible de lunes a viernes de 6am a 8pm.
+   - Dylan Blanco: Técnico en acondicionamiento físico, disponible de lunes a sábado de 7am a 9pm.
+   - Juan Gallardo: Psicólogo, magister en psicología deportiva y entrenador deportivo, disponible de martes a domingo de 8am a 7pm.
+   - Valentina Gallardo: Fisioterapeuta enfocada en rehabilitación y tratamiento de lesiones, disponible de lunes a viernes de 9am a 6pm.
 
 2. Clases grupales:
    - Yoga: Lunes, miércoles y viernes de 7am a 8am y de 6pm a 7pm.
