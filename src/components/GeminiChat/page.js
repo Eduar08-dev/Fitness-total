@@ -390,7 +390,7 @@ export default function GeminiChat() {
   }, [messages]);
 
   return (
-    <div className="flex flex-col h-full items-center w-full my-24 overflow-x-hidden">
+    <div className="flex flex-col h-full items-center w-full overflow-x-hidden">
       <div className="w-screen max-w-5xl h-full rounded-lg overflow-hidden shadow-lg">
         <div className="flex-grow p-6 h-[500px] overflow-y-auto bg-zinc-900">
           <div className="flex flex-col space-y-4 w-full" style={{ maxWidth: "1000px" }}>
